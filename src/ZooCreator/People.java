@@ -38,10 +38,6 @@ public class People {
                 "Age: " + age;
     }
 
-//    public static void addPeople() {
-//        People p1 = new People(getName(), getAge());
-//        list.add(p1.displayInfo());
-//    }
     public static void peoplePicker() {
         System.out.println("Enter the Number of the Sort of Person Would You Like to Enter?" + "\n" +
                            "1. Employee" + "\n" +

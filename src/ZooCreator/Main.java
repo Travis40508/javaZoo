@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while(true) {
+        boolean Maroon5 = true; //blame Eagle//
+        while(Maroon5 == true) {
         System.out.println("Welcome To Zoo Creator 6.0 Please Choose An Option:" + "\n" +
                 "1. List All Animals In Zoo" + "\n" +
                 "2. Add Animals to Animal List" + "\n" +
@@ -16,7 +17,7 @@ public class Main {
                 "6. Quit");
         int response = scanner.nextInt();
         switch(response) {
-            case(1) :
+            case 1:
                 Animals.listAnimals();
                 break;
             case(2) :
@@ -29,12 +30,13 @@ public class Main {
                 People.peoplePicker();
                 break;
             case(5) :
-                Zoo.help();
+                Help.help();
                 break;
+            case(6) :
+                Maroon5 = false;
+            default:
         }
-        if(response == 6) {
-            break;
-        }
+
         }
     }
 

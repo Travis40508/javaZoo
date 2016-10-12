@@ -6,16 +6,12 @@ import java.util.Scanner;
  */
 public class Employee extends People{
     String id;
-    String name;
-    String age;
     String position;
     String department;
     public static Scanner scanner = new Scanner(System.in);
 
     public Employee(String n, String a, String i, String p, String d) {
         super(n, a);
-        name = n;
-        age = a;
         id = i;
         position = p;
         department = d;
