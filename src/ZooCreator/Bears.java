@@ -37,6 +37,7 @@ public class Bears extends Animals {
         return "Name: " + name + "\n" +
                 "Age: " + age + "\n" +
                 "Species: " + species + "\n" +
+                "Exhibit: " + Exhibits.BEAR.exhibitz + "\n" +
                 "Height: " + height;
     }
     public static void buildBear() {

@@ -38,6 +38,7 @@ public class Lions extends Animals {
         return "Name: " + name + "\n" +
                 "Age: " + age + "\n" +
                 "Species: " + species + "\n" +
+                "Exhibit: " + Exhibits.LION.exhibitz + "\n" +
                 "Gender: " + gender;
     }
     public static void buildLion() {

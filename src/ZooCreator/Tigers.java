@@ -38,6 +38,7 @@ public class Tigers extends Animals {
         return "Name: " + name + "\n" +
                 "Age: " + age + "\n" +
                 "Species: " + species + "\n" +
+                "Exhibit: " + Exhibits.TIGER.exhibitz + "\n" +
                 "Weight: " + weight;
     }
     public static void buildTiger() {
