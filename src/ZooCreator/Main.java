@@ -20,13 +20,13 @@ public class Main {
                 Animals.listAnimals();
                 break;
             case(2) :
-                Animals.addAnimals();
+                Animals.animalPicker();
                 break;
             case(3) :
                 People.listPeople();
                 break;
             case(4) :
-                People.addPeople();
+                People.peoplePicker();
                 break;
             case(5) :
                 Zoo.help();

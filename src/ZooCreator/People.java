@@ -38,8 +38,24 @@ public class People {
                 "Age: " + age;
     }
 
-    public static void addPeople() {
-        People p1 = new People(getName(), getAge());
-        list.add(p1.displayInfo());
+//    public static void addPeople() {
+//        People p1 = new People(getName(), getAge());
+//        list.add(p1.displayInfo());
+//    }
+    public static void peoplePicker() {
+        System.out.println("Enter the Number of the Sort of Person Would You Like to Enter?" + "\n" +
+                           "1. Employee" + "\n" +
+                           "2. Visitor");
+        int answer = scanner.nextInt();
+        switch(answer) {
+            case(1) :
+                Employee.buildPerson();
+                break;
+            case(2) :
+                Visitor.buildPerson();
+                break;
+            default :
+                System.out.println("Please Enter a Valid Response");
+        }
     }
 }

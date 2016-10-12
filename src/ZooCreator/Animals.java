@@ -16,6 +16,7 @@ public class Animals {
         species = s;
         age = a;
     }
+
     public static void listAnimals() {
         System.out.println("Animals in the Zoo:" + "\n");
         for (String item : list) {
@@ -47,8 +48,28 @@ public class Animals {
                 "Age: " + age;
     }
 
-    public static void addAnimals() {
-        Animals a1 = new Animals(getName(), getSpecies(), getAge());
-        list.add(a1.displayInfo());
+//    public static void addAnimals() {
+//        Animals a1 = new Animals(getName(), getSpecies(), getAge());
+//        list.add(a1.displayInfo());
+//    }
+    public static void animalPicker() {
+        System.out.println("Which Species of Animal would You Like to Add? Choose by Number:" + "\n" +
+                           "1.Lion" + "\n" +
+                           "2.Tiger" + "\n" +
+                           "3.Bear");
+        int answer = scanner.nextInt();
+        switch(answer) {
+            case(1) :
+                Lions.buildLion();
+                break;
+            case(2) :
+                Tigers.buildTiger();
+                break;
+            case(3) :
+                Bears.buildBear();
+                break;
+            default :
+                System.out.println("Please Select a Valid Response");
+        }
     }
 }
