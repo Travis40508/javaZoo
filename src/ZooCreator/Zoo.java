@@ -30,12 +30,14 @@ public class Zoo {
                 People.peoplePicker();
                 break;
             case(5) :
-                Help.help();
+                System.out.println("Welcome to Zoo Creator 6.0! The Directory is Yours to Control! Add People or Animals, as well as specific data regarding each. Enjoy!");
                 break;
             case(6) :
                 Maroon5 = false;
-            default:
+            default :
+                System.out.println("Please enter a Valid Response!");
         }
+
 
         }
     }
